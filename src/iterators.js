@@ -6,6 +6,12 @@ var Iterators = (function() {
         action(arr[i]);
       }
       return arr;
+    },
+    map: function (arr, action) {
+      if (arr === null) return arr;
+      for (var i=0;i<arr.length;i++) {
+        arr = action(arr[i]);
+      }
     }
   };
 })();

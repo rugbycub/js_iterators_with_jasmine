@@ -27,8 +27,9 @@ describe("Iterators", function() {
       });
     });
     describe("given an array and an action as input", function() {
+      var arr = [1,2,3,4], action = jasmine.createSpy('action');
       it("returns a new array", function() {
-        pending();
+  
       });
       it("returned array has results of the action applied to each element of the input array", function() {
         // For this one, imagine that you have an input array like
